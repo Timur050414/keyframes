@@ -1,0 +1,37 @@
+.animation-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 500px auto;
+  border: 1px dashed #ccc; 
+}
+
+.moving-box {
+  width: 100px;
+  height: 100px;
+  background-color: #e65100;
+  animation: squareMove 3s infinite ;
+}
+
+@keyframes squareMove {
+  0% {
+    transform: translate(0, 0);
+    background-color: #cc0000; 
+  }
+  25% {
+    transform: translate(0, 150px);
+    background-color: #0000ff; 
+  }
+  50% {
+    transform: translate(150px, 150px);
+    background-color: #008000; 
+  }
+  75% {
+    transform: translate(150px, 0);
+    background-color: #ccff00; 
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: #e65100; 
+  }
+}
